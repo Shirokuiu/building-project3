@@ -1,0 +1,59 @@
+.main-nav
+  margin-bottom 20px
+
+.main-nav__list
+  padding-left 10px
+  padding-bottom 25px
+  
+  border-bottom 1px solid #e7e7e7
+
+.main-nav__items
+  margin-bottom 30px
+  &:last-child
+    margin-bottom 0
+
+.main-nav__item-link
+  position relative
+  
+  display inline-block
+  padding-bottom 4px
+  
+  font-size 21px
+  line-height 25px
+  color #333640
+  
+  transition 0.2s ease
+  &::after
+    content ''
+    
+    position absolute
+    left 0
+    bottom 0
+    
+    width 100%
+    height 1px
+    
+    background-color #333640
+    
+    transition 0.2s ease
+  &:hover
+    color #ff0000
+    &::after
+      width 0
+      
+.main-nav__item-link-icon
+  width 24px
+  height 25px
+  margin-right 15px
+  
+@media(max-width 1720px)
+  .main-nav__item-link
+    font-size 16px
+    line-height 19px
+    
+@media(max-width 320px)
+  .main-nav
+    margin-bottom 9px
+    
+  .main-nav__items
+    margin-bottom 7px
